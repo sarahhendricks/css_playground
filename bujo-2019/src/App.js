@@ -1,18 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
+import Pinterest from "./util.js";
 
-function App() {
+const App = () => {
+  useEffect(() => {
+    Pinterest.login(() => console.log("Calling login callback"));
+  //   fetch("https://api.pinterest.com/v1/boards/daisyinaglass/may-inspo/pins",
+  //    { mode: 'no-cors' })
+  //     .then(res => res.json())
+  //     .then(
+  //       result => console.log(result)
+  //     )
+  //   .catch(() => console.log("Well something went wrong."))
+  })
   return (
     <div className="App">
       <header className="App-header">
-      <a href="https://www.pinterest.com/daisyinaglass/january-inspo/"
-   data-pin-do="embedBoard"
-   data-pin-board-width="1200"
-   data-pin-scale-height="3025"
-   data-pin-scale-width="92">
-</a>
-      <a href="https://www.pinterest.com/daisyinaglass/february-inspo/"
+
+
+      {/* <a href="https://www.pinterest.com/daisyinaglass/february-inspo/"
    data-pin-do="embedBoard"
    data-pin-board-width="1200"
    data-pin-scale-height="3025"
@@ -77,7 +83,7 @@ function App() {
    data-pin-board-width="1200"
    data-pin-scale-height="3025"
    data-pin-scale-width="92">
-</a>
+</a> */}
       </header>
     </div>
   );
