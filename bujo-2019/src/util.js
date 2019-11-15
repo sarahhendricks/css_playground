@@ -1,6 +1,7 @@
 
 var Const = require('./const');
 
+const PDK = window.PDK;
 PDK.init({appId: Const.appId, cookie: true});
 
 var Pinterest = {
