@@ -1,16 +1,20 @@
-
-var Const = require('./const');
+var Const = require("./const");
 
 const PDK = window.PDK;
-PDK.init({appId: Const.appId, cookie: true});
+console.log("about to initialize");
+PDK.init({ appId: Const.PIN_APP, cookie: true });
 
 var Pinterest = {
-    login: (callback) => {
-        PDK.login({ scope : Const.PIN_SCOPE }, callback);
+    login: callback => {
+        console.log("About to call login.");
+        PDK.login({ scope: Const.PIN_SCOPE }, callback);
+        console.log("Finished calling login.");
     },
 
     pins: (boardId, callback) => {
-        PDK.request(`/boards/${boardId}/pins/`, callback);
+        console.log("About to call getting the pins");
+        PDK.request(`/boards/daisyinaglass/${boardId}/pins/`, callback);
+        console.log("Finished calling getting the pins.");
     }
 };
 
