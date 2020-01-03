@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    background-color: #0f0210;
+}
+
+.menu ul {
+    list-style-type: none;
+    /* Shoves the menu to the top left corner of the screen / container */
+    margin: 0;
+    padding: 0;
+    /* This is critical to get the background to show!! (idk why) */
+    overflow: hidden;
+}
+
+.menu li {
+    /* 1st way of horizontal alignment */
+    /*display: inline;*/
+    /* 2nd way of horizontal alignment (including a styling below) */
+    float: left;
+    margin-right: 3em;
+}
+
+.menu li a {
+    /* This line is critical (idk why) */
+    position: relative;
+    display: block;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+}
+
+.menu li a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+}
+
+.menu li a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    /* -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; */
+    -webkit-transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
