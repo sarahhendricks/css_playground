@@ -133,7 +133,7 @@ body {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-    25% {
+    65% {
         -webkit-transform: translate3d(0, 12px, 0);
         transform: translate3d(0, 12px, 0);
         opacity: 1;
@@ -147,4 +147,35 @@ body {
         -webkit-transform: translate3d(0, 12px, 0);
         transform: translate3d(0, 12px, 0);
     }
+}
+
+.island-info {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+.island__subheading {
+    color: white;
+    font-family: "gillsans-semibold", sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: -1.5rem;
+}
+
+.island__heading {
+    font-family: "jansontextltpro-roman", sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.island__logo {
+    width: 16.25rem;
+}
+
+img {
+    border: 0;
 }
