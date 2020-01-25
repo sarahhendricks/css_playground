@@ -1,0 +1,67 @@
+html,
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+h2 {
+    font-size: 52px;
+    font-family: "Montserrat", "Lato", sans-serif;
+}
+
+p,
+blockquote {
+    opacity: 87%;
+}
+
+p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: #fff;
+    opacity: 60%;
+}
+
+#title {
+    font-size: 82px;
+    font-family: "Montserrat", "Lato", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 87%;
+}
+
+#image {
+    width: 80%;
+    margin: 10px auto 40px auto;
+    display: block;
+    max-width: 1000px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 60%;
+}
+
+#tribute-info {
+    text-align: center;
+}
+
+blockquote {
+    padding: 30px;
+    font-style: italic;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#call-to-action {
+    font-size: 36px;
+}
