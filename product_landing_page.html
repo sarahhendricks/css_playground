@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="assets/css/product-page.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header id="header">
+            <img
+                src="https://cdn.shopify.com/s/files/1/1643/8697/files/crown_45x@2x.png?v=1549658038"
+                id="header-img"
+            />
+            <h1><a href="">Evil Swan</a></h1>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#shop">Shop</a>
+                <a class="nav-link" href="#sign-up">Sign Up</a>
+            </nav>
+        </header>
+        <div>
+            <div id="about">
+                <!-- Chrome requires "muted" to have autoplay run -->
+                <video id="video" autoplay loop muted>
+                    <source src="./assets/video/video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div id="shop">
+                <p>Content here</p>
+            </div>
+            <div id="sign-up">
+                <form
+                    id="form"
+                    action="https://www.freecodecamp.com/email-submit)"
+                >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="sweet@evil.com"
+                        required
+                    />
+                    <input type="submit" id="submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

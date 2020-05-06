@@ -35,7 +35,6 @@ body {
 }
 
 .menu li a:hover:after {
-    visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
     -webkit-transform-origin: left;
