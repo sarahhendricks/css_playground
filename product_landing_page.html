@@ -17,14 +17,14 @@
                 src="https://cdn.shopify.com/s/files/1/1643/8697/files/crown_45x@2x.png?v=1549658038"
                 id="header-img"
             />
-            <h1><a href="">Evil Swan</a></h1>
+            <h1><a href="">Evil Sweets</a></h1>
             <nav id="nav-bar">
                 <a class="nav-link" href="#about">About</a>
                 <a class="nav-link" href="#shop">Shop</a>
                 <a class="nav-link" href="#sign-up">Sign Up</a>
             </nav>
         </header>
-        <div>
+        <div id="main">
             <div id="about">
                 <!-- Chrome requires "muted" to have autoplay run -->
                 <video id="video" autoplay loop muted>
@@ -45,7 +45,7 @@
                             src="./assets/photos/blackberry-cake.jpg"
                             class="card-photo"
                         />
-                        <div class="content">
+                        <div class="card-content">
                             <h3 class="card-title">Blackberry Vanilla Cake</h3>
                             <p class="card-description">
                                 Simple, but oh so sweet! Pillowy vanilla cake
@@ -60,7 +60,7 @@
                             src="./assets/photos/macaroon-cake.jpg"
                             class="card-photo"
                         />
-                        <div class="content">
+                        <div class="card-content">
                             <h3 class="card-title">Macaroon Cake</h3>
                             <p class="card-description">
                                 A sugary indulgence perfect for a queen! A
@@ -75,7 +75,7 @@
                             src="./assets/photos/chocolate-cake.jpg"
                             class="card-photo"
                         />
-                        <div class="content">
+                        <div class="card-content">
                             <h3 class="card-title">Devil's Chocolate Cake</h3>
                             <p class="card-description">
                                 You can't be a queen without a dark side, and
@@ -85,24 +85,77 @@
                             </p>
                         </div>
                     </div>
+                    <div class="card">
+                        <img
+                            src="./assets/photos/oreo-cake.jpg"
+                            class="card-photo"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Oreo Cake</h3>
+                            <p class="card-description">
+                                The light and the dark, the crunchy and the soft
+                                -- you can have it all with this cake! A vanilla
+                                cake mixed with oreo crumbs and layered with
+                                oreo dust frosting, topped with fudge. Now you
+                                can have both your cookie AND cake, and eat them
+                                too!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="./assets/photos/tiramisu-cake.jpg"
+                            class="card-photo"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Tiramisu Cake</h3>
+                            <p class="card-description">
+                                A classy cake for a classy lady. Traditional
+                                ladyfinger cookies soaked in espresso, layered
+                                with mascapone cream and chocolate. Pack your
+                                bags for this one -- you'll be transported to
+                                Italy in a heartbeat!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="./assets/photos/strawberry-cake.jpg"
+                            class="card-photo"
+                        />
+                        <div class="card-content">
+                            <h3 class="card-title">Strawberry Cake</h3>
+                            <p class="card-description">
+                                Perfect for spring, this cake is as sweet as it
+                                gets! Vanilla pound cake and fluffy vanilla
+                                cream frosting, topped with the most lucious
+                                strawberries of the season. Sure to leave you
+                                daydreaming about sunny skies and open waters!
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="sign-up">
                 <h2>Newsletter</h2>
+                <p>Never miss a new treat!</p>
                 <form
                     id="form"
                     action="https://www.freecodecamp.com/email-submit)"
                 >
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="sweet@evil.com"
-                        required
-                    />
-                    <input type="submit" id="submit" />
+                    <div id="input-group">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="sweet@evil.com"
+                            required
+                        />
+                        <input type="submit" id="submit" />
+                    </div>
                 </form>
             </div>
         </div>
+        <footer id="footer"></footer>
     </body>
 </html>

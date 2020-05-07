@@ -17,6 +17,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: var(--darkest);
 }
 
 #header-img {
@@ -30,6 +31,11 @@ h1 {
     line-height: 1.5em;
     color: var(--light-accent);
     display: inline-block;
+    margin-bottom: 0;
+}
+
+h2 {
+    text-align: center;
 }
 
 a {
@@ -37,6 +43,7 @@ a {
     color: var(--light-accent);
 }
 
+/* Underlining nav bar elements */
 nav {
     float: right;
 }
@@ -74,11 +81,83 @@ nav a:after {
     transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+/* Fullscreen video */
+#about {
+    text-align: center;
+}
 #video {
     width: 100%;
     height: auto;
 }
-
 #video:focus {
     outline: none;
+}
+
+#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2em;
+    padding: 15px;
+}
+.card {
+    border: thin solid var(--light-accent);
+}
+.card-photo {
+    width: 100%;
+}
+.card-content {
+    padding: 10px;
+}
+.card-description {
+    line-height: 1.3em;
+}
+
+#sign-up {
+    text-align: center;
+}
+#input-group {
+    position: relative;
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+}
+input {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic,
+        "AppleGothic", sans-serif;
+    font-size: 16px;
+    border: 1px solid var(--light);
+    background-color: var(--darkest);
+    color: var(--light-accent);
+    max-width: 100%;
+    line-height: 1.2;
+    padding: 10px 18px;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 46px;
+    border-right: 0;
+    border-radius: 2px 0 0 2px;
+}
+#submit {
+    border-radius: 0 2px 2px 0;
+    white-space: nowrap;
+    height: 46px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: var(--light-accent);
+    color: var(--darkest);
+    font-family: "Josefin Sans", sans-serif;
+    padding: 15px 5px 15px 5px !important;
+    min-width: 150px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    white-space: normal;
+    font-size: 12px;
 }
