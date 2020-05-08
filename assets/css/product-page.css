@@ -18,24 +18,31 @@ body {
     top: 0;
     z-index: 100;
     background-color: var(--darkest);
+    padding-left: 15px;
 }
 
 #header-img {
-    background-color: var(--light-accent);
-    display: inline;
+    background-color: var(--light);
+    width: auto;
+    height: 1.7em;
+    margin-right: 0.5em;
 }
 
 h1 {
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1.5em;
-    color: var(--light-accent);
+    color: var(--light);
     display: inline-block;
     margin-bottom: 0;
+}
+h1 > a {
+    color: var(--light);
 }
 
 h2 {
     text-align: center;
+    margin-top: 3em;
 }
 
 a {
@@ -100,13 +107,14 @@ nav a:after {
     padding: 15px;
 }
 .card {
-    border: thin solid var(--light-accent);
+    background: var(--light);
 }
 .card-photo {
     width: 100%;
 }
 .card-content {
     padding: 10px;
+    color: var(--dark-accent);
 }
 .card-description {
     line-height: 1.3em;
@@ -140,6 +148,12 @@ input {
     border-right: 0;
     border-radius: 2px 0 0 2px;
 }
+input:focus {
+    outline: none;
+}
+::placeholder {
+    color: var(--medium);
+}
 #submit {
     border-radius: 0 2px 2px 0;
     white-space: nowrap;
@@ -160,4 +174,24 @@ input {
     letter-spacing: 0.08em;
     white-space: normal;
     font-size: 12px;
+}
+
+footer {
+    color: var(--dark-accent);
+    padding: 15px;
+    margin-top: 4em;
+}
+footer a {
+    color: var(--medium);
+}
+footer img {
+    background-color: var(--light);
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    transition: linear 0.2s background-color;
+}
+footer img:hover {
+    background-color: var(--light-accent);
+    transition: linear 0.2s background-color;
 }
